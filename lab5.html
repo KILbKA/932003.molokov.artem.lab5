@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>MolokovLab5</title>
+		<script src="lab5.js"></script> 
+		<style>
+			* {
+				margin: 0px;
+				padding: 0px;
+				font-family: arial;
+				font-size: 10pt;
+			}
+			body {
+				display: flex;
+				flex-flow: column;
+				align-items: center;
+			}
+			div.news {
+				height: 100px;
+				width: 50%;
+				background: #b6f5f5;
+				padding: 20px;
+				border: 1px solid gray;
+			}
+			div.news:hover {
+				background: #ff5555;
+			}
+			button {
+				background: linear-gradient(#00ff00, #008e00);
+				color: white;
+				border: none;
+				padding: 5px 10px;
+			}
+			div.button {
+				display: flex;
+				justify-content: center;
+				margin-top: 20px;
+			}
+			div.popupWin {
+				background-color: #e1ff73;
+				display: none;
+				width: 450px;
+				position: fixed;
+				top: 35%;
+				left: 35%;
+			}
+			#ozadje {
+				height: 100%;
+				width: 100%;
+				background: white;
+				opacity: 0.8;
+				display: none;
+				position: fixed;
+			}
+		</style>
+	</head>
+	
+	<body>
+	
+		<div id="ozadje" onmousedown="closeWin()"></div> 
+	
+		<div class="news">
+			<h1 style="font-size: 14pt;">Новость 1</h1>
+			<p style="margin: 5px 0px;">
+				Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae 
+				voluptatum suscipit sed delectus facere veritatis autem quisquam unde nam 
+				doloridus?
+			</p>
+			
+			<div class="button">
+				<button onmousedown="openWin('new1')">Открыть всплывающее окно</button>
+			</div>
+		</div>
+		
+		<hr noshade color="Black" width="50%" style="padding: 0px 20px;">
+		
+		<div class="news">
+			<h1 style="font-size: 14pt;">Новость 2</h1>
+			<p style="margin: 5px 0px;">
+				Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae 
+				voluptatum suscipit sed delectus facere veritatis autem quisquam unde nam 
+				doloridus?
+			</p>
+			
+			<div class="button">
+				<button onmousedown="openWin('new2')">Открыть всплывающее окно</button>
+			</div>
+		</div>
+		
+		<hr noshade color="Black" width="50%" style="padding: 0px 20px;">
+		
+		<div class="news">
+			<h1 style="font-size: 14pt;">Новость 3</h1>
+			<p style="margin: 5px 0px;">
+				Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae 
+				voluptatum suscipit sed delectus facere veritatis autem quisquam unde nam 
+				doloridus?
+			</p>
+			
+			<div class="button">
+				<button onmousedown="openWin('new3')">Открыть всплывающее окно</button>
+			</div>
+		</div>
+		
+		<hr noshade color="Black" width="50%" style="padding: 0px 20px;">
+		
+		<div class="popupWin" id="new1">
+			<h1 style="font-size: 20pt; text-align: center; padding: 20px 0px;">
+			Новость 1</h1>
+			<p style="padding: 15px;">
+				Новость 1: Lorem ipsum dolor sit amet consectetur adipisicing elit.
+				Amet asperiores aut nihill Corporis debitis labore fugiat id, eligendi 
+				ratione veritatis!
+				<br>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam hic,
+				ipsa, ullam, cupiditate eveniet at voluptate corrupti commodi nobis
+				ratione voluptateml Vel animi totam cupiditate doloribus ad ab
+				exercitationem officia eveniet impedit? Deleniti quasi nisi 
+				consectetur perspiciatis quibusdam nostrum, enim perferendis nam, 
+				magni molestias recusandae id libero vitae, repudiandae praesentium.
+			</p>
+		</div>
+		
+		<div class="popupWin" id="new2">
+			<h1 style="font-size: 20pt; text-align: center; padding: 20px 0px;">
+			Новость 2</h1>
+			<p style="padding: 15px;">
+				Новость 2: Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+				A, alias.
+				<br>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam hic,
+				ipsa, ullam, cupiditate eveniet at voluptate corrupti commodi nobis
+				ratione voluptatem! Vel animi totam cupiditate doloribus ad ab
+				exercitationem officia eveniet impedit? Deleniti quasi nisi 
+				consectetur perspiciatis quibusdam nostrum, enim perferendis nam, 
+				magni molestias recusandae id libero vitae, repudiandae praesentium.
+			</p>
+		</div>
+		
+		<div class="popupWin" id="new3">
+			<h1 style="font-size: 20pt; text-align: center; padding: 20px 0px;">
+			Новость 3</h1>
+			<p style="padding: 15px;">
+				Новость 3: Lorem ipsum dolor sit amet consectetur adipisicing elit.
+				Amet asperiores aut nihill Corporis debitis labore fugiat id, eligendi 
+				ratione veritatis!
+				<br>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam hic,
+				ipsa, ullam, cupiditate eveniet at voluptate corrupti commodi nobis
+				ratione voluptateml Vel animi totam cupiditate doloribus ad ab
+				exercitationem officia eveniet impedit? Deleniti quasi nisi 
+				consectetur perspiciatis quibusdam nostrum, enim perferendis nam, 
+				magni molestias recusandae id libero vitae, repudiandae praesentium.
+			</p>
+		</div>
+	</body>
+</html>
